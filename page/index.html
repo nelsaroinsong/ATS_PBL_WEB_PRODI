@@ -32,6 +32,11 @@
 
     <main class="home-main">
         <section class="hero-card" aria-label="Highlight utama kampus">
+            <div class="hero-slides" aria-hidden="true">
+                <img class="hero-slide is-active" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80" alt="">
+                <img class="hero-slide" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=80" alt="">
+                <img class="hero-slide" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80" alt="">
+            </div>
             <div class="hero-overlay"></div>
             <div class="hero-title-watermark">POLIMDO</div>
 
@@ -41,9 +46,9 @@
                 <p>Tertarik jadi mahasiswa polimdo?ayo join dengan kami menjadi bagian dari mahasiswa politeknik negeri manado.</p>
             </div>
 
-            <div class="hero-controls" aria-hidden="true">
-                <button type="button">&#8249;</button>
-                <button type="button">&#8250;</button>
+            <div class="hero-controls">
+                <button type="button" class="hero-prev" aria-label="Gambar sebelumnya">&#8249;</button>
+                <button type="button" class="hero-next" aria-label="Gambar berikutnya">&#8250;</button>
             </div>
         </section>
 
@@ -80,6 +85,33 @@
         </section>
     </main>
 </div>
+
+<script>
+    (function () {
+        var slides = document.querySelectorAll('.hero-slide');
+        var prevButton = document.querySelector('.hero-prev');
+        var nextButton = document.querySelector('.hero-next');
+        var currentIndex = 0;
+
+        if (!slides.length || !prevButton || !nextButton) {
+            return;
+        }
+
+        function showSlide(index) {
+            slides[currentIndex].classList.remove('is-active');
+            currentIndex = (index + slides.length) % slides.length;
+            slides[currentIndex].classList.add('is-active');
+        }
+
+        prevButton.addEventListener('click', function () {
+            showSlide(currentIndex - 1);
+        });
+
+        nextButton.addEventListener('click', function () {
+            showSlide(currentIndex + 1);
+        });
+    })();
+</script>
 
 </body>
 </html>
