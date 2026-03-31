@@ -320,6 +320,22 @@ body {
     max-width: 220px;
 }
 
+.site-footer {
+    margin: 16px 2px 2px;
+    padding: 16px 20px;
+    border: 1px solid #e6ebf3;
+    border-radius: 14px;
+    background: #fdfdfd;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
 /* NAVBAR */
 header {
     background: var(--bg-primary);
@@ -667,5 +683,11 @@ footer {
 
     .numbers-grid {
         grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        margin: 12px 0 0;
+        border-radius: 12px;
+        padding: 14px 12px;
     }
 }
