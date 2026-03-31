@@ -475,7 +475,8 @@ section h2 {
 }
 
 /* DOSEN TABLE */
-.dosen-section h2 {
+.dosen-section h2,
+.matkul-section h2 {
     margin-bottom: 18px;
 }
 
@@ -484,14 +485,17 @@ section h2 {
     overflow-x: auto;
 }
 
-.dosen-table {
+.dosen-table,
+.matkul-table {
     width: 100%;
     border-collapse: collapse;
     min-width: 920px;
 }
 
 .dosen-table th,
-.dosen-table td {
+.dosen-table td,
+.matkul-table th,
+.matkul-table td {
     border: 1px solid var(--border);
     padding: 12px 14px;
     text-align: left;
@@ -499,18 +503,22 @@ section h2 {
     font-size: 14px;
 }
 
-.dosen-table thead th {
+.dosen-table thead th,
+.matkul-table thead th {
     background: #f3f6fb;
     color: #1f2937;
     font-weight: 700;
 }
 
-.dosen-table tbody tr:nth-child(even) {
+.dosen-table tbody tr:nth-child(even),
+.matkul-table tbody tr:nth-child(even) {
     background: #fbfcff;
 }
 
 .dosen-table td:first-child,
-.dosen-table th:first-child {
+.dosen-table th:first-child,
+.matkul-table td:first-child,
+.matkul-table th:first-child {
     width: 56px;
     text-align: center;
 }
@@ -575,7 +583,9 @@ footer {
     }
 
     .dosen-table th,
-    .dosen-table td {
+    .dosen-table td,
+    .matkul-table th,
+    .matkul-table td {
         font-size: 13px;
         padding: 10px 12px;
     }

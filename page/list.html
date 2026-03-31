@@ -3,58 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daftar lengkap pengajar dan dosen di ATS Kampus">
-    <title>Daftar Dosen - ATS Kampus</title>
+    <meta name="description" content="Daftar matakuliah Prodi Politeknik Negeri Manado">
+    <title>Matakuliah - Polimdo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body class="home-page">
 
-<header class="home-topbar">
-    <a class="brand" href="index.html">
-        <span class="brand-mark">
-            <img src="../assets/img/logo_polimdo.png" alt="Logo Politeknik Negeri Manado">
-        </span>
-        <span class="brand-text">Politeknik Negeri Manado</span>
-    </a>
+<div class="home-surface">
+    <header class="home-topbar">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">
+                <img src="../assets/img/logo_polimdo.png" alt="Logo Politeknik Negeri Manado">
+            </span>
+            <span class="brand-text">Politeknik Negeri Manado</span>
+        </a>
 
-    <nav class="home-nav" aria-label="Navigasi utama">
-        <a href="index.html">Home</a>
-        <a href="list.html">Matakuliah</a>
-        <a href="dosen.html">Dosen</a>
-    </nav>
+        <nav class="home-nav" aria-label="Navigasi utama">
+            <a href="index.html">Home</a>
+            <a href="list.html">Matakuliah</a>
+            <a href="dosen.html">Dosen</a>
+        </nav>
 
-    <div class="nav-spacer" aria-hidden="true"></div>
-</header>
+        <div class="nav-spacer" aria-hidden="true"></div>
+    </header>
 
-<main class="container">
-    <section>
-        <h2>Daftar Dosen</h2>
+    <main class="home-main">
+        <section class="card matkul-section">
+            <h2>DAFTAR MATAKULIAH</h2>
 
-        <div class="list">
-            <article class="card">
-                <h3>Dr. Budi Santoso</h3>
-                <p>Informatika</p>
-            </article>
-
-            <article class="card">
-                <h3>Dr. Siti Aminah</h3>
-                <p>Sistem Informasi</p>
-            </article>
-
-            <article class="card">
-                <h3>Dr. Andi Wijaya</h3>
-                <p>Teknik Komputer</p>
-            </article>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>© 2026 ATS Kampus. Semua hak dilindungi.</p>
-</footer>
+            <div class="table-responsive">
+                <table class="matkul-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Kode Matakuliah</th>
+                            <th>Nama Matakuliah</th>
+                            <th>SKS</th>
+                            <th>Prasyarat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>INF101</td>
+                            <td>Workshop Mobile Programming</td>
+                            <td>2</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>INF102</td>
+                            <td>Serat Optik</td>
+                            <td>4</td>
+                            <td>INF101</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>INF103</td>
+                            <td>Pemrograman Web</td>
+                            <td>3</td>
+                            <td>INF101</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>INF201</td>
+                            <td>Bahasa Inggris Teknik 4</td>
+                            <td>4</td>
+                            <td>INF102</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>INF202</td>
+                            <td>Interaksi Manusia dan Komputer</td>
+                            <td>4</td>
+                            <td>INF101</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>INF203</td>
+                            <td>Basis Data 2</td>
+                            <td>3</td>
+                            <td>INF101</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>INF204</td>
+                            <td>Workshop Administrasi Jaringan &amp; Komputer</td>
+                            <td>3</td>
+                            <td>INF203</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>INF301</td>
+                            <td>Desain Pengalaman Pengguna</td>
+                            <td>3</td>
+                            <td>INF204</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
 
 </body>
 </html>
