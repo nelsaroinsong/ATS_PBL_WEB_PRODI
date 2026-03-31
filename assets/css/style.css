@@ -474,6 +474,47 @@ section h2 {
     font-weight: 600;
 }
 
+/* DOSEN TABLE */
+.dosen-section h2 {
+    margin-bottom: 18px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.dosen-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 920px;
+}
+
+.dosen-table th,
+.dosen-table td {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.dosen-table thead th {
+    background: #f3f6fb;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.dosen-table tbody tr:nth-child(even) {
+    background: #fbfcff;
+}
+
+.dosen-table td:first-child,
+.dosen-table th:first-child {
+    width: 56px;
+    text-align: center;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -531,6 +572,12 @@ footer {
     .list {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+
+    .dosen-table th,
+    .dosen-table td {
+        font-size: 13px;
+        padding: 10px 12px;
     }
 
     .home-surface {

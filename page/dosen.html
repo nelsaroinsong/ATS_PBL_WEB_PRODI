@@ -3,39 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profile Dr. Budi Santoso - Dosen Informatika ATS Kampus">
-    <title>Profile Dosen - ATS Kampus</title>
+    <meta name="description" content="Daftar dosen Prodi Politeknik Negeri Manado">
+    <title>Daftar Dosen - Polimdo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body class="home-page">
 
-<header>
-    <nav>
-        <h1>🎓 ATS Kampus</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="list.html">Daftar Dosen</a></li>
-            <li><a href="dosen.html">Profile</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="home-surface">
+    <header class="home-topbar">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">
+                <img src="../assets/img/logo_polimdo.png" alt="Logo Politeknik Negeri Manado">
+            </span>
+            <span class="brand-text">Politeknik Negeri Manado</span>
+        </a>
 
-<main class="container">
-    <section class="card profile">
-        <img src="https://via.placeholder.com/150" alt="Dr. Budi Santoso">
+        <nav class="home-nav" aria-label="Navigasi utama">
+            <a href="index.html">Home</a>
+            <a href="list.html">Matakuliah</a>
+            <a href="dosen.html">Dosen</a>
+        </nav>
 
-        <div>
-            <h2>Dr. Budi Santoso</h2>
-            <p><strong>Bidang Keahlian:</strong> Informatika</p>
-            <p><strong>Email:</strong> budi@kampus.ac.id</p>
-            <p>Dosen berpengalaman di bidang pengembangan web dan kecerdasan buatan dengan sertifikasi internasional.</p>
-        </div>
-    </section>
-</main>
+        <div class="nav-spacer" aria-hidden="true"></div>
+    </header>
 
-<footer>
-    <p>© 2026 ATS Kampus. Semua hak dilindungi.</p>
-</footer>
+    <main class="home-main">
+        <section class="card dosen-section">
+            <h2>DAFTAR DOSEN</h2>
+
+            <div class="table-responsive">
+                <table class="dosen-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Dosen</th>
+                            <th>NIP</th>
+                            <th>Bidang Keahlian</th>
+                            <th>Pendidikan Terakhir</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Maksy Sendiang, SST, MIT</td>
+                            <td>198501121010121001</td>
+                            <td>Workshop Mobile Programming</td>
+                            <td>-</td>
+                            <td>maksy.sendiang@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Steven Runtuwene, SST, M.Eng</td>
+                            <td>198203152008122004</td>
+                            <td>Serat Optik</td>
+                            <td>-</td>
+                            <td>steven.runtuwene@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hosea Kaunang</td>
+                            <td>196101041987031002</td>
+                            <td>Pemograman Web</td>
+                            <td>-</td>
+                            <td>hosea.kaunang@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Irfiani Bakri, S.Pd, M.Hum.</td>
+                            <td>198704182015042001</td>
+                            <td>Bahasa Inggris Teknik 4</td>
+                            <td>-</td>
+                            <td>irfiani.bakri@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Riecky Poekoel, ST, MT.</td>
+                            <td>196304131992031001</td>
+                            <td>Interaksi Manusia dan Komputer</td>
+                            <td>-</td>
+                            <td>riecky.poekoel@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Alfrets Wauran, ST, M.Kom</td>
+                            <td>198206252009122003</td>
+                            <td>Basis Data 2</td>
+                            <td>-</td>
+                            <td>alfrets.wauran@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Fitria Lahinta, SST, MT.</td>
+                            <td>196705141995031002</td>
+                            <td>Workshop Administrasi Jaringan &amp; Komputer</td>
+                            <td>-</td>
+                            <td>fitria.lahinta@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Herry Langi, SST, M.T</td>
+                            <td>198901152014042002</td>
+                            <td>Desain Pengalaman Pengguna</td>
+                            <td>-</td>
+                            <td>herry.langi@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
 
 </body>
 </html>
