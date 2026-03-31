@@ -320,6 +320,101 @@ body {
     max-width: 220px;
 }
 
+.choose-section {
+    margin-top: 24px;
+    padding: 30px 14px 6px;
+    text-align: center;
+}
+
+.choose-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border: 1px solid #d8c89a;
+    border-radius: 999px;
+    background: #fcf8ee;
+    font-size: 11px;
+    font-weight: 700;
+    color: #7f6837;
+    margin-bottom: 10px;
+}
+
+.choose-section h2 {
+    font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+    line-height: 1.25;
+    margin: 0 auto 10px;
+    max-width: 760px;
+    color: #151a25;
+    letter-spacing: -0.2px;
+}
+
+.choose-subtitle {
+    margin: 0 auto 22px;
+    color: #5d677a;
+    max-width: 760px;
+    font-size: 14px;
+}
+
+.choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.choose-card {
+    background: #ffffff;
+    border: 1px solid #e5e9f1;
+    border-radius: 18px;
+    padding: 20px 18px 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(24, 38, 63, 0.06);
+}
+
+.choose-card.highlight {
+    border-color: #b29a61;
+    box-shadow: 0 14px 24px rgba(125, 95, 34, 0.2);
+}
+
+.choose-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 10px;
+    background: #fbf5e7;
+    border: 1px solid #eadfbf;
+    font-size: 24px;
+}
+
+.choose-card h3 {
+    font-size: 19px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: #18243f;
+}
+
+.choose-card p {
+    font-size: 13px;
+    color: #6a7283;
+    margin-bottom: 14px;
+}
+
+.choose-card a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    padding: 8px 14px;
+    background: #8e7541;
+    color: #f9fafb;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
 .site-footer {
     margin: 16px 2px 2px;
     padding: 16px 20px;
@@ -682,6 +777,15 @@ footer {
     }
 
     .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-section {
+        margin-top: 18px;
+        padding: 14px 4px 4px;
+    }
+
+    .choose-grid {
         grid-template-columns: 1fr;
     }
 
