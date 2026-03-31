@@ -80,11 +80,15 @@ body {
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #0f1f4c 0%, #223d89 100%);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.8px;
+    background: #ffffff;
+    border: 1px solid #d8deeb;
+    overflow: hidden;
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .brand-text {
